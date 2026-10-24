@@ -23,7 +23,7 @@ uv1_scale = Vector3(10, 10, 10)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3565304, 0)
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=403378026]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.022089958, 0)
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0.022089958, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1810831616]
 transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, 0, 0.9133911, 0)
@@ -31,7 +31,7 @@ shape = SubResource("BoxShape3D_i2p60")
 debug_color = Color(0.9372549, 0.9372549, 0.96862745, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=825063970]
-transform = Transform3D(60, 0, 0, 0, 0.1, 0, 0, 0, 60, 0, 0.83157444, 0)
+transform = Transform3D(59.999985, 0, 0, 0, 0.1, 0, 0, 0, 59.999985, 0, -0.73178077, 0)
 material_overlay = SubResource("StandardMaterial3D_cminf")
 mesh = SubResource("BoxMesh_i2p60")
 

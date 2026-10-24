@@ -1,0 +1,26 @@
+#connection-setup {
+    font-family: Arial;
+    font-weight: bold; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ip {
+    margin-left: 5px; 
+}
+
+h1 { 
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans; 
+}
+
+
+
+#button {
+    margin-left : 5px;
+}

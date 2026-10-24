@@ -20,7 +20,7 @@ uv1_scale = Vector3(10, 10, 10)
 [node name="Main" type="Node" unique_id=1317840756]
 
 [node name="Player" parent="." unique_id=1710762534 instance=ExtResource("1_bo1nx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3565304, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.992959, 1.3565304, 20.736126)
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=403378026]
 transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0.022089958, 0)
@@ -31,31 +31,48 @@ shape = SubResource("BoxShape3D_i2p60")
 debug_color = Color(0.9372549, 0.9372549, 0.96862745, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=825063970]
-transform = Transform3D(59.999985, 0, 0, 0, 0.1, 0, 0, 0, 59.999985, 0, -0.73178077, 0)
+transform = Transform3D(59.999985, 0, 0, 0, 0.1, 0, 0, 0, 59.999985, 0, -0.16458106, 0)
 material_overlay = SubResource("StandardMaterial3D_cminf")
 mesh = SubResource("BoxMesh_i2p60")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1009889697]
 transform = Transform3D(1, 0, 0, 0, -0.324402, 0.94591933, 0, -0.94591933, -0.324402, 0, 10.639989, -33.98126)
 
-[node name="Node3D" parent="." unique_id=1663678919 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.606522, 0.91356814, 2.9173298)
-
-[node name="Node3D2" parent="." unique_id=413611182 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.13731, 0.91356814, -12.369969)
-
-[node name="Node3D3" parent="." unique_id=1890114034 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.976223, 0.9135672, 20.502464)
-
-[node name="Node3D4" parent="." unique_id=575960089 instance=ExtResource("3_8gbba")]
-transform = Transform3D(-0.4252619, 0.8538465, 0.30016413, 0.69758123, 0.5205249, -0.4923762, -0.5766566, 0, -0.8169867, 1.9033413, 0.9135691, 15.562405)
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Node3D4" unique_id=1363428497]
-transform = Transform3D(0.48664457, -0.66088223, 0.57132405, 0.13746808, -0.58790916, -0.7971605, 0.862716, 0.46647274, -0.19525272, -0.45321465, 10.387205, -4.867342)
-shape = SubResource("BoxShape3D_cminf")
-
 [node name="Node3D5" parent="." unique_id=246741280 instance=ExtResource("3_8gbba")]
 transform = Transform3D(-0.4577167, 0, -0.8890981, 0, 1, 0, 0.8890981, 0, -0.4577167, 3.924282, 0.9135691, -22.209753)
 
 [node name="Lentonian" parent="." unique_id=1615933944 instance=ExtResource("4_jjvhh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.226324, 3.0153718, 0)
+
+[node name="Houses" type="Node3D" parent="." unique_id=15676937]
+
+[node name="Node3D9" parent="Houses" unique_id=1007581595 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.5125988, 0, -0.85862815, 0, 1, 0, 0.85862815, 0, 0.5125988, -7.129257, 2.849049, -22.389555)
+
+[node name="Node3D8" parent="Houses" unique_id=1872143773 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.676296, 12.367082, 2.898796)
+
+[node name="Node3D7" parent="Houses" unique_id=713255298 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.8305292, 0, 0.55697507, 0, 1, 0, -0.55697507, 0, -0.8305292, 9.11765, 1.3481894, 29.150568)
+
+[node name="Node3D6" parent="Houses" unique_id=1663678919 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.25098872, 0, 0.96799004, 0, 1, 0, -0.96799004, 0, -0.25098872, -1.4421822, 0.76251364, 30.022083)
+
+[node name="Node3D" parent="Houses" unique_id=539799920 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.606522, 0.91356814, 2.9173298)
+
+[node name="Node3D2" parent="Houses" unique_id=413611182 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.13731, -2.3239045, -12.369969)
+
+[node name="Node3D3" parent="Houses" unique_id=1890114034 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.747754, 0.9135672, 14.340969)
+
+[node name="Node3D4" parent="Houses" unique_id=575960089 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.4252619, 0.8538465, 0.30016413, 0.69758123, 0.5205249, -0.4923762, -0.5766566, 0, -0.8169867, 1.9033413, 0.9135691, 15.562405)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Houses/Node3D4" unique_id=1363428497]
+transform = Transform3D(0.48664457, -0.66088223, 0.57132405, 0.13746808, -0.58790916, -0.7971605, 0.862716, 0.46647274, -0.19525272, -0.45321465, 10.387205, -4.867342)
+shape = SubResource("BoxShape3D_cminf")
+
+[node name="Node3D5" parent="Houses" unique_id=459092426 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.88026196, 0, -0.47448802, 0, 1, 0, 0.47448802, 0, -0.88026196, -15.602487, 2.849049, 28.295162)

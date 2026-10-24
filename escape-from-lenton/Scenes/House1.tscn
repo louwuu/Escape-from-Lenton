@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://nwc4rawo4ma8"]
+
+[ext_resource type="Texture2D" uid="uid://dftcvbhfnb7cn" path="res://Assets/City/Material_baseColor.png" id="1_jsdfy"]
+[ext_resource type="ArrayMesh" uid="uid://b0pgn0i42algp" path="res://Assets/City/Untitled.obj" id="2_o2j0i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
+size = Vector3(1, 2, 1.3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cminf"]
+albedo_texture = ExtResource("1_jsdfy")
+
+[node name="Node3D" type="StaticBody3D" unique_id=1663678919]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=558838965]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -3.8394566, 4.793022, 0)
+shape = SubResource("BoxShape3D_i2p60")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1982072335]
+material_overlay = SubResource("StandardMaterial3D_cminf")
+mesh = ExtResource("2_o2j0i")

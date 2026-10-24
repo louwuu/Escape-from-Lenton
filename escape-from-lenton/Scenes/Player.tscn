@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://ciaafe4scx2nb" path="res://Scripts/player.gd" id="1_gntrk"]
 [ext_resource type="Texture2D" uid="uid://c64c8vox86qiv" path="res://Assets/ntid.png_rgba.png" id="1_kyqiw"]
 [ext_resource type="ArrayMesh" uid="uid://b32y6awwyldtw" path="res://Assets/model_0.obj" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://bygkuc6b7xkur" path="res://Assets/black.png" id="4_nn08x"]
+[ext_resource type="Texture2D" uid="uid://c0sdlprxecvbo" path="res://Assets/dashboard.png" id="5_52ee3"]
+[ext_resource type="Texture2D" uid="uid://dg3hml0ok86rx" path="res://Assets/BEER.png" id="5_nn08x"]
+[ext_resource type="Texture2D" uid="uid://d085gsamh8e5" path="res://Assets/steeringwheel.png" id="6_52ee3"]
+[ext_resource type="Script" uid="uid://bmvqi5emnyq7e" path="res://Scripts/steeringwheel.gd" id="7_bhhdu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbi5n"]
 albedo_texture = ExtResource("1_kyqiw")
@@ -24,6 +29,34 @@ shape = SubResource("BoxShape3D_i2p60")
 debug_color = Color(0, 0.6, 0.69803923, 0.80784315)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=451038073]
-transform = Transform3D(1, 0, 0, 0, 0.87907624, 0.47668117, 0, -0.47668117, 0.87907624, 0, 4.8086185, 5.389568)
+transform = Transform3D(1, 0, 0, 0, 0.87907624, 0.47668117, 0, -0.47668117, 0.87907624, 0, 3.801702, 6.6493874)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=1960923094]
+
+[node name="Black" type="Sprite2D" parent="Camera3D/CanvasLayer" unique_id=549030339]
+position = Vector2(575.375, 557.00006)
+scale = Vector2(1.3142122, 0.30225986)
+texture = ExtResource("4_nn08x")
+
+[node name="Dashboard" type="Sprite2D" parent="Camera3D/CanvasLayer/Black" unique_id=1019551406]
+position = Vector2(-35.414192, 2.809507)
+scale = Vector2(0.30426145, 1.2533191)
+texture = ExtResource("5_52ee3")
+
+[node name="Steeringwheel" type="Sprite2D" parent="Camera3D/CanvasLayer/Black/Dashboard" unique_id=1075560565]
+position = Vector2(-977.4152, -115.74975)
+scale = Vector2(1.2325613, 1.3387148)
+texture = ExtResource("6_52ee3")
+script = ExtResource("7_bhhdu")
+
+[node name="Control" type="Control" parent="Camera3D/CanvasLayer" unique_id=1510880596]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Beer" type="Sprite2D" parent="Camera3D/CanvasLayer" unique_id=1018357775]
+position = Vector2(1061.0001, 492.00003)
+rotation = 0.1861312
+scale = Vector2(0.20417032, 0.1727025)
+texture = ExtResource("5_nn08x")

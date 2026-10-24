@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d15gilcq6rxk7"]
+
+[ext_resource type="Script" uid="uid://ciaafe4scx2nb" path="res://Scripts/player.gd" id="1_gntrk"]
+[ext_resource type="Texture2D" uid="uid://c64c8vox86qiv" path="res://Assets/ntid.png_rgba.png" id="1_kyqiw"]
+[ext_resource type="ArrayMesh" uid="uid://b32y6awwyldtw" path="res://Assets/model_0.obj" id="2_gntrk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbi5n"]
+albedo_texture = ExtResource("1_kyqiw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
+size = Vector3(1.5, 1.2, 3.7)
+
+[node name="Player" type="CharacterBody3D" unique_id=1710762534]
+script = ExtResource("1_gntrk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1145173788]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+material_overlay = SubResource("StandardMaterial3D_qbi5n")
+mesh = ExtResource("2_gntrk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=289641804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0070858, 0.6689584, 0)
+shape = SubResource("BoxShape3D_i2p60")
+debug_color = Color(0, 0.6, 0.69803923, 0.80784315)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=451038073]
+transform = Transform3D(1, 0, 0, 0, 0.87907624, 0.47668117, 0, -0.47668117, 0.87907624, 0, 4.8086185, 5.389568)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=1960923094]

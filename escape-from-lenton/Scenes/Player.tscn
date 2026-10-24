@@ -30,13 +30,14 @@ shape = SubResource("BoxShape3D_i2p60")
 debug_color = Color(0, 0.6, 0.69803923, 0.80784315)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=451038073]
-transform = Transform3D(1, 0, 0, 0, 0.87907624, 0.47668117, 0, -0.47668117, 0.87907624, 0, 3.801702, 6.6493874)
+transform = Transform3D(1, 0, 0, 0, 0.87907624, 0.47668117, 0, -0.47668117, 0.87907624, 0, 5.431931, 7.4373426)
+v_offset = -1.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=1960923094]
 
 [node name="Black" type="Sprite2D" parent="Camera3D/CanvasLayer" unique_id=549030339]
-position = Vector2(575.375, 557.00006)
-scale = Vector2(1.3142122, 0.30225986)
+position = Vector2(575.37494, 569.50006)
+scale = Vector2(1.3142122, 0.29802266)
 texture = ExtResource("4_nn08x")
 
 [node name="Dashboard" type="Sprite2D" parent="Camera3D/CanvasLayer/Black" unique_id=1019551406]
@@ -50,8 +51,8 @@ scale = Vector2(1.8846459, 1.6875356)
 texture = ExtResource("6_megsn")
 
 [node name="Steeringwheel" type="Sprite2D" parent="Camera3D/CanvasLayer/Black/Dashboard" unique_id=1075560565]
-position = Vector2(-977.4152, -115.74975)
-scale = Vector2(1.2325613, 1.3387148)
+position = Vector2(-955.4552, -115.74975)
+scale = Vector2(1.455, 1.455)
 texture = ExtResource("6_52ee3")
 script = ExtResource("7_bhhdu")
 

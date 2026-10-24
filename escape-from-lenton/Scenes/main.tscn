@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d15gilcq6rxk7" path="res://Scenes/Player.tscn" id="1_bo1nx"]
 [ext_resource type="Texture2D" uid="uid://dyum51lf4qwol" path="res://Assets/concrete.jpg" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://nwc4rawo4ma8" path="res://Scenes/House1.tscn" id="3_8gbba"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
 size = Vector3(1, 0.01, 1)
@@ -13,23 +14,44 @@ uv1_scale = Vector3(10, 10, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_i2p60"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cminf"]
+
 [node name="Main" type="Node" unique_id=1317840756]
 
 [node name="Player" parent="." unique_id=1710762534 instance=ExtResource("1_bo1nx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.544752, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3565304, 0)
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=403378026]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.022089958, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1810831616]
-transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, 0, 0, 0)
+transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, 0, 0.9133911, 0)
 shape = SubResource("BoxShape3D_i2p60")
 debug_color = Color(0.9372549, 0.9372549, 0.96862745, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=825063970]
-transform = Transform3D(60, 0, 0, 0, 0.1, 0, 0, 0, 60, 0, 0, 0)
+transform = Transform3D(60, 0, 0, 0, 0.1, 0, 0, 0, 60, 0, 0.83157444, 0)
 material_overlay = SubResource("StandardMaterial3D_cminf")
 mesh = SubResource("BoxMesh_i2p60")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1009889697]
 transform = Transform3D(1, 0, 0, 0, -0.324402, 0.94591933, 0, -0.94591933, -0.324402, 0, 10.639989, -33.98126)
+
+[node name="Node3D" parent="." unique_id=1663678919 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.606522, 0.91356814, 2.9173298)
+
+[node name="Node3D2" parent="." unique_id=413611182 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.13731, 0.91356814, -12.369969)
+
+[node name="Node3D3" parent="." unique_id=1890114034 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.976223, 0.9135672, 20.502464)
+
+[node name="Node3D4" parent="." unique_id=575960089 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.4252619, 0.8538465, 0.30016413, 0.69758123, 0.5205249, -0.4923762, -0.5766566, 0, -0.8169867, 1.9033413, 0.9135691, 15.562405)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Node3D4" unique_id=1363428497]
+transform = Transform3D(0.48664457, -0.66088223, 0.57132405, 0.13746808, -0.58790916, -0.7971605, 0.862716, 0.46647274, -0.19525272, -0.45321465, 10.387205, -4.867342)
+shape = SubResource("BoxShape3D_cminf")
+
+[node name="Node3D5" parent="." unique_id=246741280 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.4577167, 0, -0.8890981, 0, 1, 0, 0.8890981, 0, -0.4577167, 3.924282, 0.9135691, -22.209753)

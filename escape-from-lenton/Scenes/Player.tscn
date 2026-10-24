@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c0sdlprxecvbo" path="res://Assets/dashboard.png" id="5_52ee3"]
 [ext_resource type="Texture2D" uid="uid://dg3hml0ok86rx" path="res://Assets/BEER.png" id="5_nn08x"]
 [ext_resource type="Texture2D" uid="uid://d085gsamh8e5" path="res://Assets/steeringwheel.png" id="6_52ee3"]
+[ext_resource type="Texture2D" uid="uid://f31x6nycywgi" path="res://Assets/coke.png" id="6_megsn"]
 [ext_resource type="Script" uid="uid://bmvqi5emnyq7e" path="res://Scripts/steeringwheel.gd" id="7_bhhdu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbi5n"]
@@ -42,6 +43,11 @@ texture = ExtResource("4_nn08x")
 position = Vector2(-35.414192, 2.809507)
 scale = Vector2(0.30426145, 1.2533191)
 texture = ExtResource("5_52ee3")
+
+[node name="Coke" type="Sprite2D" parent="Camera3D/CanvasLayer/Black/Dashboard" unique_id=1659377802]
+position = Vector2(1280.852, -4.8815613)
+scale = Vector2(1.8846459, 1.6875356)
+texture = ExtResource("6_megsn")
 
 [node name="Steeringwheel" type="Sprite2D" parent="Camera3D/CanvasLayer/Black/Dashboard" unique_id=1075560565]
 position = Vector2(-977.4152, -115.74975)

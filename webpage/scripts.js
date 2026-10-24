@@ -1,6 +1,10 @@
 const buttonpressed = document.getElementById("button")
+const socket = new WebSocket("ws://localhost:3000");
+    socket.addEventListener("open", (event) => {
+        socket.send("Hello Server!");
+    });
 
 function test(){
     console.log("test");
-    $.post("localhost:3000", "test", (data, status) => {console.log(data);});
+    socket.send("Test");
 };

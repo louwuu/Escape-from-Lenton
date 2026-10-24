@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d15gilcq6rxk7" path="res://Scenes/Player.tscn" id="1_bo1nx"]
 [ext_resource type="Texture2D" uid="uid://dyum51lf4qwol" path="res://Assets/concrete.jpg" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://nwc4rawo4ma8" path="res://Scenes/House1.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://clf1isp5ki8sm" path="res://Scenes/Lentonian.tscn" id="4_jjvhh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
 size = Vector3(1, 0.01, 1)
@@ -55,3 +56,6 @@ shape = SubResource("BoxShape3D_cminf")
 
 [node name="Node3D5" parent="." unique_id=246741280 instance=ExtResource("3_8gbba")]
 transform = Transform3D(-0.4577167, 0, -0.8890981, 0, 1, 0, 0.8890981, 0, -0.4577167, 3.924282, 0.9135691, -22.209753)
+
+[node name="Lentonian" parent="." unique_id=1615933944 instance=ExtResource("4_jjvhh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.226324, 3.0153718, 0)

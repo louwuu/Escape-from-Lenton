@@ -16,7 +16,7 @@ albedo_texture = ExtResource("1_kyqiw")
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
 size = Vector3(1.5, 1.2, 3.7)
 
-[node name="Player" type="CharacterBody3D" unique_id=1710762534]
+[node name="Player" type="CharacterBody3D" unique_id=1710762534 groups=["player"]]
 script = ExtResource("1_gntrk")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1145173788]

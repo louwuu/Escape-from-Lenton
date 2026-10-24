@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://clf1isp5ki8sm"]
+
+[ext_resource type="Script" uid="uid://c6v72k6l6wea3" path="res://Scripts/lentonian.gd" id="1_ddtyg"]
+[ext_resource type="Texture2D" uid="uid://b0oni58o1d3ck" path="res://Assets/yobs-removebg-preview.png" id="1_eegl2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vrb2l"]
+
+[node name="Lentonian" type="CharacterBody3D" unique_id=1615933944]
+script = ExtResource("1_ddtyg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=531017808]
+shape = SubResource("CapsuleShape3D_vrb2l")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1079315941]
+offset = Vector2(30, 70)
+billboard = 2
+texture = ExtResource("1_eegl2")

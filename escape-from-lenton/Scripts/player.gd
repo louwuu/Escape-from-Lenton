@@ -10,7 +10,7 @@ const UP = Vector3(0, -1, 0)
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity += get_gravity() * delta * 2
 
 	# Handle jump.
 	if is_on_floor() and Input.is_action_pressed("ui_accept"):

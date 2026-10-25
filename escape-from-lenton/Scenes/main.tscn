@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dyum51lf4qwol" path="res://Assets/concrete.jpg" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://nwc4rawo4ma8" path="res://Scenes/House1.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://clf1isp5ki8sm" path="res://Scenes/Lentonian.tscn" id="4_jjvhh"]
+[ext_resource type="Script" uid="uid://bkae7cga05nfo" path="res://Scripts/server.gd" id="5_kry3j"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
 size = Vector3(1, 0.01, 1)
@@ -76,3 +77,6 @@ shape = SubResource("BoxShape3D_cminf")
 
 [node name="Node3D5" parent="Houses" unique_id=459092426 instance=ExtResource("3_8gbba")]
 transform = Transform3D(-0.88026196, 0, -0.47448802, 0, 1, 0, 0.47448802, 0, -0.88026196, -15.602487, 2.849049, 28.295162)
+
+[node name="Networking" type="Node" parent="." unique_id=1254325915 groups=["network"]]
+script = ExtResource("5_kry3j")

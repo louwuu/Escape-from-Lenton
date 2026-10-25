@@ -6,6 +6,8 @@ const JUMP_VELOCITY = 14
 
 const UP = Vector3(0, -1, 0)
 
+@onready var net = get_tree().get_first_node_in_group("network")
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

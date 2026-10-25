@@ -87,4 +87,6 @@ func handle_control(packet_text):
 			
 		
 		#print('z: ', packet_z)
+	elif 'shoot' in packet_text:
+		player.shoot()
 	

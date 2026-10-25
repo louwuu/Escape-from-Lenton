@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://couwjoj6lfixg"]
+
+[ext_resource type="Texture2D" uid="uid://iedg63dgq1ks" path="res://Assets/minigun_turret__lowpoly_asset/textures/Textures_baseColor.png" id="1_64uvh"]
+[ext_resource type="ArrayMesh" uid="uid://y51wo53mggjg" path="res://Assets/turret.obj" id="2_i4wwf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i2p60"]
+albedo_texture = ExtResource("1_64uvh")
+
+[node name="Turret" type="Node3D" unique_id=659947697]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2055479992]
+material_overlay = SubResource("StandardMaterial3D_i2p60")
+mesh = ExtResource("2_i4wwf")

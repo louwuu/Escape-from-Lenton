@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://nwc4rawo4ma8" path="res://Scenes/House1.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://clf1isp5ki8sm" path="res://Scenes/Lentonian.tscn" id="4_jjvhh"]
 [ext_resource type="Script" uid="uid://bkae7cga05nfo" path="res://Scripts/server.gd" id="5_kry3j"]
+[ext_resource type="PackedScene" uid="uid://de37dd1sm2f8o" path="res://Scenes/Lava.tscn" id="5_kry3j"]
+>>>>>>> 8288a3df9d953c1f5c7a4e4bdb76d8ed9358e00e
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
 size = Vector3(1, 0.01, 1)
@@ -20,6 +22,534 @@ uv1_scale = Vector3(10, 10, 10)
 
 [node name="Main" type="Node" unique_id=1317840756]
 
+[node name="Lava" type="Node3D" parent="." unique_id=1124499078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 1)
+
+[node name="outsidelava" parent="Lava" unique_id=1241905829 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -32.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava" unique_id=1718630708 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D2" unique_id=2002106858 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava" unique_id=436885822 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D3" unique_id=582030644 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D3/Node3D2" unique_id=188232825 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava" unique_id=2026069659 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D4" unique_id=981790339 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D4/Node3D2" unique_id=426004787 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/Node3D4" unique_id=1109474511 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D4/Node3D3" unique_id=1677181770 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D4/Node3D3/Node3D2" unique_id=674014384 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava" unique_id=829168971 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5" unique_id=1128961120 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D2" unique_id=1891549467 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/Node3D5" unique_id=1090317765 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D3" unique_id=1603369485 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D3/Node3D2" unique_id=1418701926 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/Node3D5" unique_id=456603162 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D4" unique_id=991200982 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D4/Node3D2" unique_id=2051218701 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/Node3D5/Node3D4" unique_id=1240406503 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D4/Node3D3" unique_id=1917237855 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=154870661 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="6ER lava" parent="Lava/outsidelava" unique_id=644214674 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 0, 38.963387)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava" unique_id=334061730 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D2" unique_id=1850149969 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava" unique_id=1043440745 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D3" unique_id=579906443 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D3/Node3D2" unique_id=1017539206 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava" unique_id=1823209611 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D4" unique_id=1246724302 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D4/Node3D2" unique_id=1252618446 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/Node3D4" unique_id=1398561519 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D4/Node3D3" unique_id=1310037426 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D4/Node3D3/Node3D2" unique_id=626755291 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava" unique_id=2111460982 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5" unique_id=1475144856 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D2" unique_id=1771076067 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/Node3D5" unique_id=1209948629 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D3" unique_id=2096504134 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D3/Node3D2" unique_id=577028297 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/Node3D5" unique_id=180693775 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D4" unique_id=305437906 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D4/Node3D2" unique_id=1419897187 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D4" unique_id=399468470 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D4/Node3D3" unique_id=827609030 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=218341902 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="6ER lava" parent="Lava/outsidelava/6ER lava" unique_id=1391978839 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39.963387)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava" unique_id=1521641917 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D2" unique_id=1698288430 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava" unique_id=1779097953 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D3" unique_id=2011642971 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D3/Node3D2" unique_id=355695875 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava" unique_id=1224416394 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D4" unique_id=341220442 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D4/Node3D2" unique_id=1024306487 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D4" unique_id=908685178 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D4/Node3D3" unique_id=1823506401 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D4/Node3D3/Node3D2" unique_id=1503843416 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava/6ER lava" unique_id=719914052 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5" unique_id=1281885030 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D2" unique_id=1920536317 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5" unique_id=1432910588 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D3" unique_id=1113579419 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D3/Node3D2" unique_id=161815266 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5" unique_id=1062054103 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D4" unique_id=473184357 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D4/Node3D2" unique_id=1696627791 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D4" unique_id=21252043 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D4/Node3D3" unique_id=326608661 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=1326903206 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="6ER lava2" parent="Lava/outsidelava/6ER lava" unique_id=1036290768 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 58.963387)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2" unique_id=1954116417 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D2" unique_id=1927623705 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava/6ER lava2" unique_id=686146135 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5" unique_id=2036933036 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D2" unique_id=1390495718 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5" unique_id=852312645 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D3" unique_id=1334335727 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D3/Node3D2" unique_id=1948040291 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5" unique_id=1763852398 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D4" unique_id=1375226672 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D4/Node3D2" unique_id=819559516 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1.5198638, 0, -1.5498848, 0, 1, 0, 1.5858059, 0, 1.4854364, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D4" unique_id=455807792 instance=ExtResource("5_kry3j")]
+transform = Transform3D(-1, 8.742278e-08, 0, 8.742278e-08, 1, 8.742278e-08, 7.642742e-15, 8.742278e-08, -1, -11, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D4/Node3D3" unique_id=1685593340 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D" parent="Lava/outsidelava/6ER lava/6ER lava2/Node3D5/Node3D4" unique_id=135500042 instance=ExtResource("5_kry3j")]
+transform = Transform3D(0.8408986, 0, 1.1146017, 0, 1, 0, -0.5411927, 0, 1.7318544, -20.133331, 0, -10.816933)
+
+[node name="6ER lava" parent="Lava/outsidelava/6ER lava/6ER lava2" unique_id=378222981 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39.963387)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava" unique_id=1178193158 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D2" unique_id=1674956382 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava" unique_id=769106842 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D3" unique_id=1043457783 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D3/Node3D2" unique_id=900613993 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava" unique_id=20738214 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D4" unique_id=1626927257 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D4/Node3D2" unique_id=687739892 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D4" unique_id=487715483 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D4/Node3D3" unique_id=550516722 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D4/Node3D3/Node3D2" unique_id=1882073749 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava" unique_id=1321303355 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5" unique_id=1122493492 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D2" unique_id=1435238299 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5" unique_id=1889679631 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D3" unique_id=1922938347 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D3/Node3D2" unique_id=512107344 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5" unique_id=1731690153 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D4" unique_id=927793928 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D4/Node3D2" unique_id=1875409507 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D4" unique_id=708814572 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D4/Node3D3" unique_id=231178729 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=72360924 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="6ER lava2" parent="Lava/outsidelava/6ER lava/6ER lava2" unique_id=711679216 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -80.03661)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2" unique_id=1165573573 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D2" unique_id=60915475 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2" unique_id=785862665 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D3" unique_id=473457191 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D3/Node3D2" unique_id=1256140779 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2" unique_id=1311571466 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D4" unique_id=124497795 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D4/Node3D2" unique_id=1155300218 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D4" unique_id=1963550894 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D4/Node3D3" unique_id=762726867 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D4/Node3D3/Node3D2" unique_id=246116336 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2" unique_id=947327466 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5" unique_id=979306265 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D2" unique_id=1545026012 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5" unique_id=318632636 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D3" unique_id=64059017 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D3/Node3D2" unique_id=1723759231 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5" unique_id=1596718535 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D4" unique_id=470315366 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D4/Node3D2" unique_id=1473821577 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D4" unique_id=591932705 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D4/Node3D3" unique_id=1633778991 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=723641029 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="6ER lava" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2" unique_id=1378098352 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39.963387)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava" unique_id=2000298414 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D2" unique_id=1019440118 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava" unique_id=1584415329 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D3" unique_id=402826575 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D3/Node3D2" unique_id=386881653 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava" unique_id=1767235466 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D4" unique_id=1109109696 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D4/Node3D2" unique_id=1155996534 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D4" unique_id=1513144138 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D4/Node3D3" unique_id=1997873996 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D4/Node3D3/Node3D2" unique_id=998771406 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava" unique_id=1827182861 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -0.036613464)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5" unique_id=1291155399 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D2" unique_id=1914412327 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5" unique_id=1206576384 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D3" unique_id=2058593870 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D3/Node3D2" unique_id=9614856 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5" unique_id=112517300 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D4" unique_id=1567050294 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D4/Node3D2" unique_id=228206378 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D4" unique_id=655704013 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D4/Node3D3" unique_id=1512044075 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=1720488380 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D5" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5" unique_id=319990675 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -62.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5" unique_id=1262160657 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D2" unique_id=1414173768 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5" unique_id=309036282 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D3" unique_id=1292808025 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D3/Node3D2" unique_id=501932118 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D4" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5" unique_id=2071570165 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.036613)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D4" unique_id=509882433 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D4/Node3D2" unique_id=192051522 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D3" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D4" unique_id=1527384301 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29.963387)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D4/Node3D3" unique_id=52108864 instance=ExtResource("5_kry3j")]
+transform = Transform3D(-0.010514944, 0, 0.9999447, 0, 1, 0, -0.9999447, 0, -0.010514944, 1, 0, 10)
+
+[node name="Node3D2" parent="Lava/outsidelava/6ER lava/6ER lava2/6ER lava2/6ER lava/Node3D5/Node3D5/Node3D4/Node3D3/Node3D2" unique_id=2104868518 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava" unique_id=1151698685 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="Node3D2" parent="Lava/Node3D2" unique_id=1347827852 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D2" parent="Lava/Node3D2/Node3D2" unique_id=440787500 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="Node3D" parent="Lava" unique_id=551934607 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -28.8071)
+
 [node name="Player" parent="." unique_id=1710762534 instance=ExtResource("1_bo1nx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.992959, 1.3565304, 20.736126)
 
@@ -27,46 +557,94 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.992959, 1.3565304, 20.7361
 transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0.022089958, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1810831616]
-transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, 0, 0.9133911, 0)
+transform = Transform3D(59.999996, 0, 0, 0, 60, 0, 0, 0, 59.999996, 0, 0.043566704, 0)
 shape = SubResource("BoxShape3D_i2p60")
 debug_color = Color(0.9372549, 0.9372549, 0.96862745, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=825063970]
-transform = Transform3D(59.999985, 0, 0, 0, 0.1, 0, 0, 0, 59.999985, 0, -0.16458106, 0)
+transform = Transform3D(59.999985, 0, 0, 0, 0.1, 0, 0, 0, 59.999985, 0.098302454, -0.38923812, -0.017751312)
 material_overlay = SubResource("StandardMaterial3D_cminf")
 mesh = SubResource("BoxMesh_i2p60")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1009889697]
 transform = Transform3D(1, 0, 0, 0, -0.324402, 0.94591933, 0, -0.94591933, -0.324402, 0, 10.639989, -33.98126)
 
-[node name="Node3D5" parent="." unique_id=246741280 instance=ExtResource("3_8gbba")]
-transform = Transform3D(-0.4577167, 0, -0.8890981, 0, 1, 0, 0.8890981, 0, -0.4577167, 3.924282, 0.9135691, -22.209753)
-
 [node name="Lentonian" parent="." unique_id=1615933944 instance=ExtResource("4_jjvhh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.226324, 3.0153718, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4297056, 3.0153718, 0)
 
 [node name="Houses" type="Node3D" parent="." unique_id=15676937]
 
+[node name="Node3D12" parent="Houses" unique_id=246741280 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.4577167, 0, -0.8890981, 0, 1, 0, 0.8890981, 0, -0.4577167, 1.0495081, 0.9135691, -22.751457)
+
+[node name="Node3D5" parent="Houses/Node3D12" unique_id=1663678919 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.08083677, 0, -0.9967276, 0, 1, 0, 0.9967276, 0, 0.08083677, -5.088417, 0.91356885, -30.817713)
+
+[node name="Node3D11" parent="Houses/Node3D12" unique_id=65667570 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.9998344, 0, -0.018189996, 0, 1, 0, 0.018189996, 0, -0.9998344, -13.864735, 12.97192, -10.36613)
+
+[node name="Node3D" parent="Houses/Node3D12/Node3D11" unique_id=1501995309 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.84042865, 0, 0.5419222, 0, 1, 0, -0.5419222, 0, 0.84042865, -1.9354248, -12.590896, -5.78648)
+
+[node name="Node3D3" parent="Houses/Node3D12/Node3D11" unique_id=1345610721 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.84042865, 0, 0.5419222, 0, 1, 0, -0.5419222, 0, 0.84042865, 1.1004677, -12.30864, 4.718133)
+
+[node name="Node3D9" parent="Houses/Node3D12" unique_id=1892635670 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.8887263, 0, -0.45843828, 0, 1, 0, 0.45843828, 0, 0.8887263, -7.7519493, 0.48317564, -26.752022)
+
+[node name="Node3D" parent="Houses" unique_id=1942422921 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.95296836, 0, 0.30307028, 0, 1, 0, -0.30307028, 0, -0.95296836, 38.854454, 1.3881674, 19.00015)
+
+[node name="Node3D11" parent="Houses" unique_id=1767122733 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.98108196, 0, -0.19359049, 0, 1, 0, 0.19359049, 0, 0.98108196, -11.998994, 12.97192, -12.526449)
+
+[node name="Node3D" parent="Houses/Node3D11" unique_id=1988262959 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.84042865, 0, 0.54192215, 0, 1, 0, -0.54192215, 0, 0.84042865, -1.9354258, -11.453513, -5.78648)
+
+[node name="Node3D3" parent="Houses/Node3D11" unique_id=1291068805 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.84042865, 0, 0.54192215, 0, 1, 0, -0.54192215, 0, 0.84042865, 1.1004663, -11.453514, 4.718134)
+
+[node name="Node3D10" parent="Houses" unique_id=1792826706 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.9372317, 0, -0.3487072, 0, 1, 0, 0.3487072, 0, 0.9372317, 20.645597, 1.5878797, 23.636292)
+
+[node name="Node3D" parent="Houses/Node3D10" unique_id=94517701 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.8089193, 0, -0.68209547, 0, 1.7511635, 0, 0.4764086, 0, -1.1581659, -10.177689, -2.0273247, -9.492243)
+
+[node name="Node3D10" parent="Houses/Node3D10" unique_id=595476919 instance=ExtResource("3_8gbba")]
+transform = Transform3D(1.0368314, 0, -0.65905786, 0, 1.833011, 0, 0.5450314, 0, 1.253748, 17.516342, -0.5403991, 2.091074)
+
+[node name="Node3D2" parent="Houses/Node3D10" unique_id=784953516 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.92131364, 0, 0.3888203, 0, 1, 0, -0.3888203, 0, 0.92131364, 18.74084, -1.0164781, -22.760036)
+
+[node name="Node3D" parent="Houses/Node3D10/Node3D2" unique_id=1579210425 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.86166686, 0, -0.50747395, 0, 1, 0, 0.50747395, 0, -0.86166686, -10.177689, -0.31026268, -9.492243)
+
+[node name="Node3D2" parent="Houses" unique_id=2080183256 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.8642535, 0, 0.5030565, 0, 1, 0, -0.5030565, 0, 0.8642535, 17.76604, 1.9862833, -2.9321175)
+
+[node name="Node3D" parent="Houses/Node3D2" unique_id=328744382 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.8616669, 0, -0.507474, 0, 1, 0, 0.507474, 0, -0.8616669, -10.177689, -2.0273247, -9.492245)
+
 [node name="Node3D9" parent="Houses" unique_id=1007581595 instance=ExtResource("3_8gbba")]
-transform = Transform3D(0.5125988, 0, -0.85862815, 0, 1, 0, 0.85862815, 0, 0.5125988, -7.129257, 2.849049, -22.389555)
+transform = Transform3D(0.46335807, 0, -0.99678725, 0, 1.3976325, 0, 0.7761475, 0, 0.5950794, -7.129257, 1.933358, -22.389555)
 
 [node name="Node3D8" parent="Houses" unique_id=1872143773 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.676296, 12.367082, 2.898796)
+transform = Transform3D(0.84042865, 0, -0.54192215, 0, 1, 0, 0.54192215, 0, 0.84042865, -12.115756, 12.367082, 9.779346)
+
+[node name="Node3D" parent="Houses/Node3D8" unique_id=539799920 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.84042865, 0, 0.54192215, 0, 1, 0, -0.54192215, 0, 0.84042865, -1.9354258, -11.453513, -5.78648)
+
+[node name="Node3D3" parent="Houses/Node3D8" unique_id=1890114034 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.84042865, 0, 0.54192215, 0, 1, 0, -0.54192215, 0, 0.84042865, 1.1004663, -11.453514, 4.718134)
 
 [node name="Node3D7" parent="Houses" unique_id=713255298 instance=ExtResource("3_8gbba")]
-transform = Transform3D(-0.8305292, 0, 0.55697507, 0, 1, 0, -0.55697507, 0, -0.8305292, 9.11765, 1.3481894, 29.150568)
+transform = Transform3D(-0.56846666, 0, 0.82270634, 0, 1.1349223, 0, -0.82270634, 0, -0.56846666, 8.72945, 1.3481894, 29.150568)
 
-[node name="Node3D6" parent="Houses" unique_id=1663678919 instance=ExtResource("3_8gbba")]
-transform = Transform3D(-0.25098872, 0, 0.96799004, 0, 1, 0, -0.96799004, 0, -0.25098872, -1.4421822, 0.76251364, 30.022083)
+[node name="Node3D6" parent="Houses" unique_id=1194479023 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.040662184, 0, 0.9991729, 0, 1, 0, -0.9991729, 0, -0.040662184, -0.7619324, 0.76251364, 30.022083)
 
-[node name="Node3D" parent="Houses" unique_id=539799920 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.606522, 0.91356814, 2.9173298)
-
-[node name="Node3D2" parent="Houses" unique_id=413611182 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.13731, -2.3239045, -12.369969)
-
-[node name="Node3D3" parent="Houses" unique_id=1890114034 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.747754, 0.9135672, 14.340969)
+[node name="Node3D6" parent="Houses/Node3D6" unique_id=661269358 instance=ExtResource("3_8gbba")]
+transform = Transform3D(-0.040662184, 0, 0.9991729, 0, 1, 0, -0.9991729, 0, -0.040662184, -2.2353816, 0.76251364, 30.022083)
 
 [node name="Node3D4" parent="Houses" unique_id=575960089 instance=ExtResource("3_8gbba")]
 transform = Transform3D(-0.4252619, 0.8538465, 0.30016413, 0.69758123, 0.5205249, -0.4923762, -0.5766566, 0, -0.8169867, 1.9033413, 0.9135691, 15.562405)
@@ -76,7 +654,19 @@ transform = Transform3D(0.48664457, -0.66088223, 0.57132405, 0.13746808, -0.5879
 shape = SubResource("BoxShape3D_cminf")
 
 [node name="Node3D5" parent="Houses" unique_id=459092426 instance=ExtResource("3_8gbba")]
+<<<<<<< HEAD
 transform = Transform3D(-0.88026196, 0, -0.47448802, 0, 1, 0, 0.47448802, 0, -0.88026196, -15.602487, 2.849049, 28.295162)
 
 [node name="Networking" type="Node" parent="." unique_id=1254325915 groups=["network"]]
 script = ExtResource("5_kry3j")
+=======
+transform = Transform3D(-0.648563, 0, -0.7973999, 0, 1.5172768, 0, 0.45814645, 0, -1.1288182, -13.888757, 2.849049, 27.877262)
+
+[node name="Node3D3" parent="Houses" unique_id=1989796208 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.78287417, 0, 0.80561894, 0, 1.5170742, 0, -0.7282491, 0, 0.86604744, 17.947647, 1.9792258, 38.469242)
+
+[node name="Node3D2" parent="Houses/Node3D3" unique_id=246117278 instance=ExtResource("3_8gbba")]
+transform = Transform3D(0.37517145, 0, -0.8567114, 0, 0.65916353, 0, 0.7744347, 0, 0.3391408, 6.490527, 8.2094345, -6.498329)
+
+[node name="Node3D" parent="." unique_id=713128070 instance=ExtResource("5_kry3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.78523564, 41, 0, 27)

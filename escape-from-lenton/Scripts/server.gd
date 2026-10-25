@@ -2,7 +2,8 @@ extends Node
 
 # The port we will listen to.
 const PORT = 3000
-
+var speed = 0
+var forwards = 0;
 # Our TCP Server instance.
 var _tcp_server = TCPServer.new()
 @onready var player = get_tree().get_first_node_in_group("player")
@@ -62,16 +63,28 @@ func handle_control(packet_text):
 	if 'y' in packet_text:
 		var pos_y = packet_text.find("y", 0)
 		var packet_y = packet_text.substr(pos_y+1)
+		speed += 1.5*float(packet_y)
+		if player.direction.x == 0:
+			player.direction.x = 1
 		
-		player.velocity.x = (0.075 * rad_to_deg(float(packet_y)))
-		#print('y: ' + packet_y)
+		if player.direction.z == 0:
+			player.direction.z = 1
 		
-	if 'z' in packet_text:
+		player.velocity.x = player.direction.x * speed * cos(player.angle())
+		player.velocity.z = player.direction.z * speed * sin(player.angle())
+		
+
+		print("speed is" + str(player.velocity.x))
+		
+	elif 'z' in packet_text:
 		var pos_z = packet_text.find("z", 0)
 		var packet_z = packet_text.substr(pos_z+1)
 		#player.velocity.x -= 0.075 * rad_to_deg(float(packet_z))
-		
-		player.rotate_y((0.075 * float(packet_z)))
+		if float(packet_z) > 0.0174533: #1 degree
+			player.rotate_y((0.075 * float(packet_z)))
+			player.angle += rad_to_deg((0.075 * float(packet_z)))
+			if player.angle >= 360:
+				player.angle -= 360
 		
 		#print('z: ', packet_z)
 	

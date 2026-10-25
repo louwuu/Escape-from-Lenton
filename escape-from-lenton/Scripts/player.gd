@@ -3,8 +3,9 @@ extends CharacterBody3D
 
 const SPEED = 15.0
 const JUMP_VELOCITY = 14
-
+var direction = 0
 const UP = Vector3(0, -1, 0)
+var angle = 0
 @onready var net = get_tree().get_first_node_in_group("network")
 
 @export var health = 100
@@ -21,7 +22,7 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	var direction := (transform.basis * Vector3(0, 0, input_dir.y)).normalized()
+	direction = (transform.basis * Vector3(0, 0, input_dir.y)).normalized()
 	
 	rotate_y(-input_dir.x * delta * 5)
 	

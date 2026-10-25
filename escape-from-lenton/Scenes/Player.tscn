@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d085gsamh8e5" path="res://Assets/steeringwheel.png" id="6_52ee3"]
 [ext_resource type="Texture2D" uid="uid://f31x6nycywgi" path="res://Assets/coke.png" id="6_megsn"]
 [ext_resource type="Script" uid="uid://bmvqi5emnyq7e" path="res://Scripts/steeringwheel.gd" id="7_bhhdu"]
+[ext_resource type="Script" uid="uid://yblrll87j1aa" path="res://Scenes/health_bar.gd" id="10_yoq75"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbi5n"]
 albedo_texture = ExtResource("1_kyqiw")
@@ -67,3 +68,15 @@ position = Vector2(1061.0001, 492.00003)
 rotation = 0.1861312
 scale = Vector2(0.20417032, 0.1727025)
 texture = ExtResource("5_nn08x")
+
+[node name="HealthBar" type="Label" parent="Camera3D/CanvasLayer" unique_id=1274344660]
+anchors_preset = -1
+anchor_right = 0.128
+anchor_bottom = 0.37600002
+offset_left = 25.0
+offset_top = 21.0
+offset_right = 99.54399
+offset_bottom = -154.64801
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("10_yoq75")

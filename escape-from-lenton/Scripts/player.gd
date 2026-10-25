@@ -6,6 +6,7 @@ const JUMP_VELOCITY = 14
 
 const UP = Vector3(0, -1, 0)
 
+@export var health = 100
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

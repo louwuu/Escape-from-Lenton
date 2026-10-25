@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://de37dd1sm2f8o"]
+
+[ext_resource type="Texture2D" uid="uid://b21ta0ue7ufov" path="res://Assets/lava.png" id="1_06q7x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
+size = Vector3(10, 0.2, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cminf"]
+albedo_texture = ExtResource("1_06q7x")
+uv1_scale = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i2p60"]
+
+[node name="Node3D" type="StaticBody3D" unique_id=1241905829]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1876267564]
+shape = SubResource("BoxShape3D_i2p60")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1686066827]
+transform = Transform3D(10, 0, 0, 0, 0.2, 0, 0, 0, 10, 0, 0, 0)
+material_overlay = SubResource("StandardMaterial3D_cminf")
+mesh = SubResource("BoxMesh_i2p60")

@@ -4,9 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dyum51lf4qwol" path="res://Assets/concrete.jpg" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://nwc4rawo4ma8" path="res://Scenes/House1.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://clf1isp5ki8sm" path="res://Scenes/Lentonian.tscn" id="4_jjvhh"]
-[ext_resource type="Script" uid="uid://bkae7cga05nfo" path="res://Scripts/server.gd" id="5_kry3j"]
 [ext_resource type="PackedScene" uid="uid://de37dd1sm2f8o" path="res://Scenes/Lava.tscn" id="5_kry3j"]
->>>>>>> 8288a3df9d953c1f5c7a4e4bdb76d8ed9358e00e
+[ext_resource type="Script" uid="uid://bkae7cga05nfo" path="res://Scripts/server.gd" id="6_21xkr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i2p60"]
 size = Vector3(1, 0.01, 1)
@@ -654,12 +653,6 @@ transform = Transform3D(0.48664457, -0.66088223, 0.57132405, 0.13746808, -0.5879
 shape = SubResource("BoxShape3D_cminf")
 
 [node name="Node3D5" parent="Houses" unique_id=459092426 instance=ExtResource("3_8gbba")]
-<<<<<<< HEAD
-transform = Transform3D(-0.88026196, 0, -0.47448802, 0, 1, 0, 0.47448802, 0, -0.88026196, -15.602487, 2.849049, 28.295162)
-
-[node name="Networking" type="Node" parent="." unique_id=1254325915 groups=["network"]]
-script = ExtResource("5_kry3j")
-=======
 transform = Transform3D(-0.648563, 0, -0.7973999, 0, 1.5172768, 0, 0.45814645, 0, -1.1288182, -13.888757, 2.849049, 27.877262)
 
 [node name="Node3D3" parent="Houses" unique_id=1989796208 instance=ExtResource("3_8gbba")]
@@ -670,3 +663,6 @@ transform = Transform3D(0.37517145, 0, -0.8567114, 0, 0.65916353, 0, 0.7744347, 
 
 [node name="Node3D" parent="." unique_id=713128070 instance=ExtResource("5_kry3j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.78523564, 41, 0, 27)
+
+[node name="Networking" type="Node" parent="." unique_id=542566732 groups=["network"]]
+script = ExtResource("6_21xkr")

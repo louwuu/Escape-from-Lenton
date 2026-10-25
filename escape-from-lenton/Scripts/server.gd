@@ -63,18 +63,20 @@ func handle_control(packet_text):
 	if 'y' in packet_text:
 		var pos_y = packet_text.find("y", 0)
 		var packet_y = packet_text.substr(pos_y+1)
-		speed += 1.5*float(packet_y)
-		if player.direction.x == 0:
-			player.direction.x = 1
+		#speed += 1.5*float(packet_y)
+		#if player.direction.x == 0:
+		#	player.direction.x = 1
 		
-		if player.direction.z == 0:
-			player.direction.z = 1
+		#if player.direction.z == 0:
+		#	player.direction.z = 1
 		
-		player.velocity.x = player.direction.x * speed * cos(player.angle())
-		player.velocity.z = player.direction.z * speed * sin(player.angle())
+		#player.velocity.x = player.direction.x * speed * cos(player.angle())
+		#player.velocity.z = player.direction.z * speed * sin(player.angle())
+		
+		player.throttle += float(packet_y)
 		
 
-		print("speed is" + str(player.velocity.x))
+		#print("speed is" + str(player.velocity.x))
 		
 	elif 'z' in packet_text:
 		var pos_z = packet_text.find("z", 0)

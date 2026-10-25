@@ -82,11 +82,9 @@ func handle_control(packet_text):
 		var pos_z = packet_text.find("z", 0)
 		var packet_z = packet_text.substr(pos_z+1)
 		#player.velocity.x -= 0.075 * rad_to_deg(float(packet_z))
-		if float(packet_z) > 0.0174533: #1 degree
+		if abs(float(packet_z)) > 0.0174533: #1 degree
 			player.rotate_y((0.075 * float(packet_z)))
-			player.angle += rad_to_deg((0.075 * float(packet_z)))
-			if player.angle >= 360:
-				player.angle -= 360
+			
 		
 		#print('z: ', packet_z)
 	
